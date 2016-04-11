@@ -8,8 +8,8 @@
   <%= favicon_link_tag "favicon.ico" %>
   <% if current_user %>
     <script>
-      const CURRENT_USER_ID = <%= current_user.id %>
-      const CURRENT_USER_USERNAME = "<%= current_user.username %>"
+      window.CURRENT_USER_ID = <%= current_user.id %>
+      window.CURRENT_USER_USERNAME = "<%= current_user.username %>"
     </script>
   <% end %>
   <script>
